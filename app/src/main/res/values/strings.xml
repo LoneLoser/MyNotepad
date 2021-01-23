@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MyNotepad</string>
+    <string name="little_title">记录生活的点点滴滴</string>
+
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="delete">删除</string>
+    <string name="update">更新</string>
+
+    <string name="choose_startDate">开始：----/--/--</string>
+    <string name="choose_endDate">结束：----/--/--</string>
+    <string name="all">全部</string>
+    <string name="last">过去</string>
+    <string name="today">今天</string>
+    <string name="future">未来</string>
+
+    <string name="order_by_date">按时间排序</string>
+    <string name="order_by_priority">按重要性排序</string>
+    <string name="important">重要</string>
+    <string name="general">普通</string>
+    <string name="unimportant">不重要</string>
+
+    <string name="username">用户名：</string>
+    <string name="password">密码：</string>
+    <string name="repassword">重复密码：</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="back">返回</string>
+    <string name="quit">退出登录</string>
+    <string name="auto_login">以后自动登录</string>
+
+    <string name="meditation">聆听大自然的声音</string>
+</resources>

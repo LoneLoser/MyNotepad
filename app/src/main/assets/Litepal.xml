@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="Notepad" />
+    <version value="4" />
+    <list>
+        <mapping class="com.example.mynotepad.dao.Record" />
+    </list>
+</litepal>

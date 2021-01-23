@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFAF0">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:src="@drawable/register"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:layout_marginRight="10dp" />
+        <EditText
+            android:id="@+id/username_editText"
+            android:paddingRight="30dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:layout_marginRight="10dp" />
+        <EditText
+            android:id="@+id/password_editText"
+            android:inputType="textPassword"
+            android:paddingRight="30dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/repassword"
+            android:textSize="20sp"
+            android:gravity="right"
+            android:layout_marginRight="10dp" />
+        <EditText
+            android:id="@+id/repassword_editText"
+            android:inputType="textPassword"
+            android:paddingRight="30dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/register"
+            android:textSize="18sp"
+            android:background="#87CEEB" />
+    </LinearLayout>
+
+</LinearLayout>

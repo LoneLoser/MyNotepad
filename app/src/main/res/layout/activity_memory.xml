@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:id="@+id/activity_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/choose_startDate_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#F0FFFF"
+                android:alpha="0.6"
+                android:textColor="#000000"
+                android:text="@string/choose_startDate"/>
+            <Button
+                android:id="@+id/choose_endDate_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#F0FFFF"
+                android:alpha="0.6"
+                android:textColor="#000000"
+                android:text="@string/choose_endDate"/>
+            <Button
+                android:id="@+id/choose_all_button"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#FFFFF0"
+                android:alpha="0.6"
+                android:textColor="#000000"
+                android:text="@string/all"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/memory_items_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/order_icon_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/order_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/order_layout"
+        android:layout_width="185dp"
+        android:layout_height="90dp"
+        android:layout_alignBottom="@id/order_icon_image"
+        android:layout_toLeftOf="@id/order_icon_image"
+        android:background="@drawable/order_radio_bg"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:alpha="0.9"
+        android:visibility="gone">
+        <RadioGroup
+            android:id="@+id/order_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/order_icon_image">
+            <RadioButton
+                android:id="@+id/order_date_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_by_date"
+                android:textSize="18dp"
+                android:textColor="#000080"
+                android:checked="true" />
+            <RadioButton
+                android:id="@+id/order_priority_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_by_priority"
+                android:textSize="18dp"
+                android:textColor="#000080" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>
